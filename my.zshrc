@@ -85,3 +85,4 @@ function spectrum_ls() {
   done
 }
 
+source ~/my-config/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
