@@ -84,5 +84,10 @@ function spectrum_ls() {
     print -P -- "$code: %F{$code}Test%f"
   done
 }
+autoload -U history-beginning-search-backward
+autoload -U history-beginning-search-forward
+
+bindkey "^[[A" history-search-backward
+bindkey "^[[B" history-search-forward
 
 source ~/my-config/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
